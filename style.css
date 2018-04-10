@@ -1,0 +1,114 @@
+:root {
+  --color-bkg: #424242;
+  --color-frg: #E6E5D0;
+  --color-txt: #201E1E;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-bkg);
+  color: var(--color-txt);
+  font-family: 'Roboto', sans-serif;
+}
+
+#game {
+  background-color: var(--color-frg);
+  border: 5px solid var(--color-txt);
+  border-radius: 20px;
+  position: absolute;
+  margin: auto;
+  top: 0; bottom: 0;
+  left: 0; right: 0;  
+  width: 550px;
+  height: 650px;
+  display: grid;
+  grid-row-gap: 50px;
+  padding: 50px 0;
+  grid-template-rows: 50px 1fr 50px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#title {
+  grid-column: 1 / 4;
+  text-align: center;
+  font-size: 50px;
+}
+
+form,
+canvas {
+  grid-column: 1 / 4;
+  grid-row: 2 / 3;
+}
+
+form {
+  display: grid;
+  padding: 100px;
+  text-align: center;
+  z-index: 100;
+  grid-gap: 10px;
+}
+
+#result-form {
+  display: none;
+  background-color: rgba(230, 229, 208, .5);
+}
+
+form select,
+form input {
+  background-color: white;
+  border: none;
+  font-size: 20px;
+  border: 2px solid var(--color-txt);
+  border-radius: 6px;
+}
+
+form h5 {
+  font-size: 50px;
+  text-transform: uppercase;
+  align-self: end;
+}
+
+form select {
+  display: block;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  text-align-last:center;
+}
+
+form input {
+  padding: 5px 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+canvas {
+  display: none
+}
+
+.score {
+  display: grid;
+  grid-gap: 10px;
+  text-align: center;
+  align-self: end;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.score h4 {
+  font-size: 30px;
+}
+
+#score-player-1 {
+  grid-column: 1;
+  padding-left: 50px;
+}
+
+#score-player-2 {
+  grid-column: 3;
+  padding-right: 50px;
+}

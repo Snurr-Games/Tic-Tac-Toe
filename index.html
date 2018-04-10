@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Snurr Games: Tic Tac Toe</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/style.css">
+  <script type="text/javascript" src="/game.js" defer="defer"></script>
+</head>
+<body>
+
+  <div id="game">
+    <h1 id="title">Tic Tac Toe</h1>
+
+    <form id="setup-form">
+      <h5>Grid</h5>
+      <select name="size">
+        <option value="3">3x3</option>
+        <option value="4">4x4</option>
+        <option value="5">5x5</option>
+        <option value="6">6x6</option>
+        <option value="7">7x7</option>
+        <option value="8">8x8</option>
+        <option value="9">9x9</option>
+        <option value="10">10x10</option>
+        <option value="11">11x11</option>
+        <option value="12">12x12</option>
+        <option value="13">13x13</option>
+        <option value="14">14x14</option>
+        <option value="15">15x15</option>
+        <option value="16">16x16</option>
+      </select>
+
+      <input type="submit" value="Start" />
+    </form>
+
+    <form id="result-form">
+      <h5>Winner: <span></span></h5>
+
+      <input type="submit" value="Again!" />
+      <input id="quit-btn" type="button" value="Quit" />
+    </form>
+
+    <canvas id="canvas"></canvas>
+    
+    <div id="score-player-1" class="score">
+      <h3>Player 1</h3>
+      <h4>0</h4>
+    </div>
+
+    <div id="score-player-2" class="score">
+      <h3>Computer</h3>
+      <h4>0</h4>
+    </div>
+  </div>
+  
+</body>
+</html>
