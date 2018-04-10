@@ -44,6 +44,10 @@ canvas {
   grid-row: 2 / 3;
 }
 
+canvas {
+  position: relative;
+}
+
 form {
   display: grid;
   padding: 100px;
